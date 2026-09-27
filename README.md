@@ -19,14 +19,18 @@ challenges/
 ├── 001-cat/
 │   ├── README.md        # what it does, how to run/test
 │   ├── go.mod           # its own module — self-contained
+│   ├── main.go          # entry point (thin wrapper)
 │   ├── src/
-│   │   ├── main.go      # entry point
-│   │   └── main_test.go # tests
-│   └── testdata/        # test fixtures
+│   │   └── cat.go       # core logic (package cat)
+│   └── tests/
+│       ├── cat_test.go  # tests (package tests)
+│       └── testdata/    # test fixtures
 ├── 002-wc/
 │   └── ...
 └── ...
 ```
+
+Core logic lives in `src/` as a library package; `main.go` at the challenge root is only a thin wrapper; tests live in their own `tests/` package and import `src`.
 
 Folders are numbered in **solve order** (the beginner roadmap first), not the site's listing order.
 
@@ -36,9 +40,9 @@ Suggested order (John's [beginner roadmap](https://codingchallenges.fyi/blog/jun
 
 ```sh
 cd challenges/001-cat
-go run ./src              # run
-go test ./...             # test
-go build -o bin/ ./src    # build binary into bin/ (gitignored)
+go run .                # run
+go test ./...           # test
+go build -o bin/ .      # build binary into bin/ (gitignored)
 ```
 
 ## Progress

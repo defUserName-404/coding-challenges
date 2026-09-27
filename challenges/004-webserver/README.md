@@ -8,14 +8,15 @@ Serve static files over HTTP, implementing enough of the HTTP protocol by hand t
 
 ## Layout
 
-- `src/main.go` — entry point
-- `src/main_test.go` — tests
-- `testdata/` — test fixtures
+- `main.go` — entry point (thin wrapper)
+- `src/webserver.go` — core logic (`package webserver`)
+- `tests/webserver_test.go` — tests (`package tests`)
+- `tests/testdata/` — test fixtures
 
 ## Run
 
 ```sh
-go run ./src
+go run .
 ```
 
 ## Test

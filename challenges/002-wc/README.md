@@ -8,14 +8,15 @@ Count lines, words, and bytes (or characters) in files or from standard input, l
 
 ## Layout
 
-- `src/main.go` — entry point
-- `src/main_test.go` — tests
-- `testdata/` — test fixtures
+- `main.go` — entry point (thin wrapper)
+- `src/wc.go` — core logic (`package wc`)
+- `tests/wc_test.go` — tests (`package tests`)
+- `tests/testdata/` — test fixtures
 
 ## Run
 
 ```sh
-go run ./src
+go run .
 ```
 
 ## Test

@@ -8,14 +8,15 @@ A Redis-compatible server implementing the RESP protocol with key-value commands
 
 ## Layout
 
-- `src/main.go` — entry point
-- `src/main_test.go` — tests
-- `testdata/` — test fixtures
+- `main.go` — entry point (thin wrapper)
+- `src/redis.go` — core logic (`package redis`)
+- `tests/redis_test.go` — tests (`package tests`)
+- `tests/testdata/` — test fixtures
 
 ## Run
 
 ```sh
-go run ./src
+go run .
 ```
 
 ## Test

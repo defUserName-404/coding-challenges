@@ -8,14 +8,15 @@ An interactive shell supporting builtins, external commands, `PATH` lookup, and 
 
 ## Layout
 
-- `src/main.go` — entry point
-- `src/main_test.go` — tests
-- `testdata/` — test fixtures
+- `main.go` — entry point (thin wrapper)
+- `src/shell.go` — core logic (`package shell`)
+- `tests/shell_test.go` — tests (`package tests`)
+- `tests/testdata/` — test fixtures
 
 ## Run
 
 ```sh
-go run ./src
+go run .
 ```
 
 ## Test
