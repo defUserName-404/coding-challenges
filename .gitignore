@@ -1,0 +1,24 @@
+# Go
+bin/
+*.exe
+*.test
+*.out
+coverage.*
+
+# Node (if a challenge uses JS/TS)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Rust
+target/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
