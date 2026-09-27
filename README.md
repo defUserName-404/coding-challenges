@@ -51,7 +51,7 @@ go build -o bin/ .      # build binary into bin/ (gitignored)
 
 | Challenge | Status | Solution |
 | --- | --- | --- |
-| [cat](https://codingchallenges.fyi/challenges/challenge-cat) | 🔄 | [challenges/001-cat](challenges/001-cat/) |
+| [cat](https://codingchallenges.fyi/challenges/challenge-cat) | ✅ | [challenges/001-cat](challenges/001-cat/) |
 | [wc](https://codingchallenges.fyi/challenges/challenge-wc) | 🔄 | [challenges/002-wc](challenges/002-wc/) |
 | [shell](https://codingchallenges.fyi/challenges/challenge-shell) | 🔄 | [challenges/003-shell](challenges/003-shell/) |
 | [web server](https://codingchallenges.fyi/challenges/challenge-webserver) | 🔄 | [challenges/004-webserver](challenges/004-webserver/) |
