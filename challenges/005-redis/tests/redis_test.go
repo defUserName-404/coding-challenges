@@ -1,13 +1,7 @@
 package tests
 
-import (
-	"testing"
+import "testing"
 
-	"github.com/defUserName-404/coding-challenges/challenges/005-redis/src"
-)
-
-func TestPlaceholder(t *testing.T) {
-	if redis.Placeholder() == "" {
-		t.Fatal("Placeholder() returned empty string")
-	}
+func TestServe(t *testing.T) {
+	t.Skip("not implemented yet - replace with real tests")
 }

@@ -1,13 +1,7 @@
 package tests
 
-import (
-	"testing"
+import "testing"
 
-	"github.com/defUserName-404/coding-challenges/challenges/002-wc/src"
-)
-
-func TestPlaceholder(t *testing.T) {
-	if wc.Placeholder() == "" {
-		t.Fatal("Placeholder() returned empty string")
-	}
+func TestRun(t *testing.T) {
+	t.Skip("not implemented yet - replace with real tests")
 }
